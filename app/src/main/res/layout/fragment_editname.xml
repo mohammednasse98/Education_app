@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Your Name: "
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/text"
+        android:layout_above="@id/change">
+    <EditText
+        android:id="@+id/editFirst"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="10dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="48dp"
+        android:hint="First Name"
+        android:drawableLeft="@drawable/ic_baseline_default_24"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text"
+        android:maxLength="12"
+        />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editLast"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:textSize="15dp"
+        />
+
+    <EditText
+    android:id="@+id/editLast"
+    android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:background="@drawable/edit"
+    android:layout_marginTop="20dp"
+    android:hint="Last Name"
+        android:layout_below="@id/editFirst"
+    android:drawableLeft="@drawable/ic_baseline_default_24"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="20dp"
+    android:inputType="text"
+        android:drawablePadding="10dp"
+        android:paddingLeft="5dp"
+        android:maxLength="12"
+    />
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:text="Update!"
+        android:id="@+id/change"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/costmer_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@id/cancel"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/costmer_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+</RelativeLayout>

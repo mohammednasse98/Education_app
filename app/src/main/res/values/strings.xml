@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Education</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="tab_text_1">Material</string>
+    <string name="tab_text_2">Notification</string>
+    <string name="tab_text_3">Settings</string>
+    <string name="title_activity_tabbed1">TabbedActivity1</string>
+    <string name="title_activity_tabbed_te">TabbedTe</string>
+    <string name="tab_text_4"   >Notification</string>
+    <string name="tab_text_5">Settings</string>
+    <string-array name="cities">
+        <item>Amman</item>
+        <item>Zarqa</item>
+        <item>Irbid</item>
+        <item>Balqaa</item>
+        <item>Madaba</item>
+        <item>Jerash</item>
+        <item>Al-Karak</item>
+        <item>Ajloun</item>
+        <item>Al-Tafila</item>
+        <item>Maan</item>
+        <item>Al-Aqaba</item>
+        <item>Al-Mafraq</item>
+    </string-array>
+</resources>

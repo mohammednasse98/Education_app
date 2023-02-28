@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Your Birthday: "
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/textb" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:layout_below="@id/textb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/sdtext"
+        android:textSize="20dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sdtext"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:textSize="15dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:text="Next"
+        android:id="@+id/bns"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/costmer_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@id/cancel"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/costmer_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+
+</RelativeLayout>

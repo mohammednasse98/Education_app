@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your City :"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/text1"
+        />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/edit"
+        android:layout_below="@id/text1"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_above="@id/choose"
+        android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/listchoos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editText"
+        android:layout_above="@id/textView"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_above="@id/cancel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/costmer_button"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/costmer_button"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        />
+</RelativeLayout>

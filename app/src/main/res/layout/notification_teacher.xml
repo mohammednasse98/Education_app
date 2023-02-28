@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/browser_actions_bg_grey"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/e1"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/image"
+                android:text="Name: "
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/image"
+                android:layout_below="@id/textViewName"
+                android:text="Phone: "
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/textViewHourAndStutus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_marginStart="-5dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/image"
+                android:layout_toRightOf="@+id/image"
+                android:text="Hour Needed: "
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textViewCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPhone"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/image"
+                android:layout_toRightOf="@+id/image"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:text="City: "
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/accept"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_alignTop="@+id/textViewHourAndStutus"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/acc" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/reject"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/accept"
+                android:layout_alignBottom="@+id/accept"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/accept"
+                android:src="@drawable/rej" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accept"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Status"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

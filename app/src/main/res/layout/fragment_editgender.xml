@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's Your Gender ?"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_baseline_person_24"
+
+        android:id="@+id/image"
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/image"
+
+        android:src="@drawable/ic_baseline_girl_24"
+        />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gender"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:textSize="15dp"
+        />
+
+    <ListView
+        android:layout_toRightOf="@id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tl"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:id="@+id/gender"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_above="@id/bge"
+        android:id="@+id/tl"
+        android:textSize="15dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/costmer_button"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+    android:layout_above="@id/cancel"
+        android:text="Next"
+        android:id="@+id/bge"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/costmer_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+</RelativeLayout>
